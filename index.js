@@ -52,6 +52,10 @@ Client.prototype._buildOptions = function (query, options) {
 		result.imgSize = options.size;
 	}
 
+	if (options.type) {
+		result.imgType = options.type;
+	}
+
 	return result;
 };
 
